@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Task;
 use App\Form\TaskType;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,10 +14,10 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class TaskController extends AbstractController
 {
-    /**
+    /**$task
      * @Route("/tasks/new", name="task_new", methods={"GET", "POST"})
      */
-    public function new(Request $request, ManagerRegistry $managerRegistry): Response
+    public function taskNew(Request $request, ManagerRegistry $managerRegistry): Response
     {
         $task = new Task();
         $form = $this->createForm(TaskType::class, $task);
@@ -26,7 +28,7 @@ class TaskController extends AbstractController
             $entityManager->persist($task);
             $entityManager->flush();
 
-            return $this->redirectToRoute('task_show', ['id' => $task->getId()]);
+            return $this->redirectToRoute('task_show', ['task' => $task->getId()]);
         }
 
         return $this->render('task/new.html.twig', [
@@ -35,11 +37,11 @@ class TaskController extends AbstractController
     }
 
     /**
-     * @Route("/tasks/{task}", name="task_show")
+     * @Route("/tasks/{id}", name="task_show")
      */
-    public function show(Task $task): Response
+    public function show(string $id, EntityManagerInterface $entityManager): Response
     {
-        $test = $task;
+        $task = $entityManager->getRepository(Task::class)->find((int) $id);
         return $this->render('task/show.html.twig', [
             'task' => $task,
         ]);

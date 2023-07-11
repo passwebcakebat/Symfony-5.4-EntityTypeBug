@@ -34,7 +34,6 @@ class Task
      */
     private $tags;
 
-
     public function getId(): int
     {
         return $this->id;

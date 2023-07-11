@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f900229-d518-4f17-af44-80cfdeab34e5" name="Changes" comment="" />
+    <list default="true" id="0f900229-d518-4f17-af44-80cfdeab34e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/var/data.db" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,17 +19,20 @@
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -31,12 +41,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1689065214" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1689068722" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1689065213" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1689068648" />
                   </RecentBranch>
                 </list>
               </option>
@@ -53,9 +63,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="127.0.0.1" id="6017c21c-048d-48b6-bfed-dd36c30fce23" name="127.0.0.1" port="41759" />
+      <server host="127.0.0.1" id="feac681e-3e77-428a-a71a-33820e405f60" name="127.0.0.1 (1)" port="39999" />
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
@@ -202,7 +214,7 @@
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/mint/Pulpit/Katalog bez nazwy/todo_new/templates",
+    "last_opened_file_path": "/home/mint/Pulpit/Katalog bez nazwy/todo_new",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -240,6 +252,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689063278606</updated>
       <workItem from="1689063279594" duration="2464000" />
+      <workItem from="1689068682744" duration="1917000" />
     </task>
     <servers />
   </component>
@@ -250,14 +263,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/vendor/symfony/doctrine-bridge/Form/ChoiceList/ORMQueryBuilderLoader.php</url>
-          <line>56</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/Entity/Task.php</url>
+          <line>38</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/TaskController.php</url>
-          <line>41</line>
-          <option name="timeStamp" value="3" />
+          <line>44</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
