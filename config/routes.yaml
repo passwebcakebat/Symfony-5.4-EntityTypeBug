@@ -1,10 +1,3 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-task_new:
-  path: /tasks/new
-  controller: App\Controller\TaskController::new
-
-task_show:
-  path: /tasks/{task}
-  controller: App\Controller\TaskController::show
