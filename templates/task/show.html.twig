@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Task{{ task.id }}{% endblock %}
+
+{% block body %}
+    <h1>Task {{ task.id }}</h1>
+
+    <p><strong>Name:</strong> {{ task.name }}</p>
+
+    <h2>Tags</h2>
+    <ul>
+        {% for tag in task.tags %}
+            <li>{{ tag.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
