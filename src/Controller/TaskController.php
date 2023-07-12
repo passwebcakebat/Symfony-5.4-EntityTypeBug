@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class TaskController extends AbstractController
 {
-    /**$task
+    /**
      * @Route("/tasks/new", name="task_new", methods={"GET", "POST"})
      */
     public function taskNew(Request $request, ManagerRegistry $managerRegistry): Response
@@ -28,7 +28,7 @@ class TaskController extends AbstractController
             $entityManager->persist($task);
             $entityManager->flush();
 
-            return $this->redirectToRoute('task_show', ['task' => $task->getId()]);
+            return $this->redirectToRoute('task_show', ['id' => $task->getId()]);
         }
 
         return $this->render('task/new.html.twig', [

@@ -3,7 +3,7 @@
 #    controller: App\Controller\DefaultController::index
 task_new:
   path: /tasks/new
-  controller: App\Controller\TaskController::new
+  controller: App\Controller\TaskController::taskNew
 
 task_show:
   path: /tasks/{id}
